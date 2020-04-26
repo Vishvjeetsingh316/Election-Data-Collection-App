@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@drawable/drawable_gradient_animation_list"
+            tools:context=".MainActivity"
+            tools:showIn="@layout/app_bar_main">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:text="  Jhunjhunu Nagar Parishad"
+                android:textStyle="bold"
+                android:orientation="vertical"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/district_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:hint="@string/district_name"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/edit_text_border" />
+
+
+            <EditText
+                android:id="@+id/ward_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:hint="@string/ward_no"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/edit_text_border" />
+
+            <EditText
+                android:id="@+id/booth_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:hint="@string/booth_no"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/edit_text_border"/>
+
+            <EditText
+                android:id="@+id/person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="230dp"
+                android:hint="@string/person_name"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/edit_text_border"/>
+
+            <EditText
+                android:id="@+id/mobile_no_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="290dp"
+                android:hint="@string/mobile_no_1"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:digits="0123456789"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:background="@drawable/edit_text_border"/>
+
+            <EditText
+                android:id="@+id/mobile_no_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="350dp"
+                android:hint="@string/mobile_no_2"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:digits="0123456789"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:background="@drawable/edit_text_border"/>
+
+            <EditText
+                android:id="@+id/karykrta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:hint="@string/karykrta"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"/>
+
+            <EditText
+                android:id="@+id/remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="470dp"
+                android:hint="@string/remark"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="530dp"
+                android:hint="Select Ward"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"/>
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="650dp"
+                android:text="@string/submit"
+                android:background="@drawable/button_border"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
